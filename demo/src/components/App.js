@@ -5,6 +5,7 @@ import About from './About/About';
 import People from './People/People';
 import FAQ from './About/FAQ/FAQ';
 import Company from './About/Company/Company';
+import Character from './Character/Character';
 
 class App extends Component {
   render() {
@@ -24,6 +25,7 @@ class App extends Component {
           </About>
         } />
         <Route path="/people" component={ People }/>
+        <Route path="/people/:id" component={ Character }/>
       </div>
     );
   }
